@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;700&display=swap');
 
 .container {
   display: flex;
@@ -12,4 +12,50 @@
   width: 343px;
   height: 292px;
   text-align: center;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+button,
+input {
+  font-family: inherit;
+  padding: 0;
+  margin: 0;
+  height: 52px;
+}
+
+.input-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-area input {
+  margin-bottom: 25px;
+  text-align: center;
+  border: solid 1px black;
+  font-size: 24px;
+}
+
+.input-area input.invalid {
+  border: solid 1px red;
+  color: red;
+}
+
+h1.invalid {
+  margin-top: 25px;
+  color: red;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.input-area button {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
 }
